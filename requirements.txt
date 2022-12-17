@@ -2,5 +2,5 @@ streamlit
 psycopg2-binary
 pillow
 pandas
-sklearn
+scikit-learn
 numpy
