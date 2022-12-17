@@ -1,6 +1,6 @@
 streamlit
-psycopg2
-PIL
+psycopg2-binary
+pillow
 pandas
 sklearn
 numpy
