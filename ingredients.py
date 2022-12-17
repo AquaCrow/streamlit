@@ -88,10 +88,8 @@ def search_ingredients():
         recipe_df = pd.read_sql(recipe_sql, conn)
         ingredient = pd.read_sql(ingredient_sql, conn)
         col3, col4 = st.columns([0.8,0.2])
-        
         for i in range(recipe_df.shape[0]):
-            if recipe_df.iloc[i,1]:
-                recipe_df.iloc[i,1] = '<img src="' + recipe_df.iloc[i,1] + '"width = "300" >'
+            recipe_df.iloc[i,1] = '<img src="' + recipe_df.iloc[i,1] + '"width = "300" >'
 
         with col3:
             st.write(f'재료 정보 : {ingredient.iloc[0,0]}')

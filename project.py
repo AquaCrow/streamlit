@@ -7,6 +7,7 @@ from ingredients import search_ingredients
 from zori_method import search_cook
 from basket import basket
 from name import search_name
+from information import information
 
 ### 조, 조원 이름 추가
 
@@ -27,8 +28,8 @@ st.markdown('<p style="text-align:right;">Yoonseok Lee</p>',unsafe_allow_html = 
 
 
 search_option = st.selectbox(
-        "Select how do you search",
-        ('Search', 'Name', 'Nutrients', 'Cook', 'Ingredients','Basket')
+        "Select how do you search or what you want",
+        ('Search', 'Name', 'Nutrients', 'Cook', 'Ingredients','Basket', 'Add_Information')
     )
 
 if search_option=='Nutrients':
@@ -45,6 +46,9 @@ elif search_option=='Ingredients':
 
 elif search_option=='Basket':
     basket()
+
+elif search_option=='Add_Information':
+    information()
         
 
 image = Image.open('food.jpg')
