@@ -1,0 +1,6 @@
+streamlit
+psycopg2
+PIL
+pandas
+sklearn
+numpy
